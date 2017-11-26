@@ -5,6 +5,7 @@
 https://thrift.apache.org/docs/install/windows
 ### 2.	下载测试用的thrift文件，从这里就看thrfit语法怎么写，主要就是struct和enum，服务叫service，service和struct可以用继承
 https://git-wip-us.apache.org/repos/asf?p=thrift.git;a=blob_plain;f=tutorial/shared.thrift
+</br>
 https://git-wip-us.apache.org/repos/asf?p=thrift.git;a=blob_plain;f=tutorial/tutorial.thrift
 ### 3.	上面下载的exe和thrift文件放同一目录，在命令行执行以下命令
 thrift-0.10.0.exe -r --gen js --gen java tutorial.thrift
@@ -18,7 +19,9 @@ https://git1-us-west.apache.org/repos/asf?p=thrift.git;a=blob_plain;f=tutorial/j
 这个可以可以从http://www.apache.org/dyn/closer.cgi?path=/thrift/0.10.0/thrift-0.10.0.tar.gz 下载下来的文件目录下（thrift-0.10.0\tutorial\js\src下）有个httpd.java文件，这个利用了httpcore的jar包。实现创建httpserver的功能。
 ### 8.	cross-region问题，参考
 https://stackoverflow.com/questions/8153832/xmlhttprequest-changes-post-to-option
+</br>
 https://stackoverflow.com/questions/25727306/request-header-field-access-control-allow-headers-is-not-allowed-by-access-contr
+</br>
 js部分需要支持options请求里，在response里加上response.addHeader("Access-Control-Allow-Origin", "*")，改造下httpd.java
 ### 9.	启动这个Java Server端的启动类，至此Java服务端完成配置
 ### 10.	把thrift-0.10.0\lib\js\src下的thrift.js拷贝到gen-js里面
